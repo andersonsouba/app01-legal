@@ -26,8 +26,8 @@
       <li>Favoritos, historial, preferencias y la última cotización válida se almacenan localmente.</li>
       <li>Las búsquedas, los valores introducidos y los resultados no se envían a analytics.</li>
       <li>La función de monedas consulta a un proveedor externo para obtener tipos de cambio.</li>
-      <li>Google Mobile Ads se utilizará para publicidad y Google UMP para consentimiento cuando corresponda.</li>
-      <li>Google/Firebase Analytics podrá activarse posteriormente solo después de la configuración correspondiente y conforme a la política definida en la Aplicación.</li>
+      <li>Google Mobile Ads está configurado para publicidad y Google UMP ofrece opciones de consentimiento cuando corresponde.</li>
+      <li>Firebase Analytics puede recopilar datos de uso e información técnica solo después de que el usuario active Analytics en Ajustes.</li>
     </ul>
 
     <h2>2. Datos almacenados localmente</h2>
@@ -42,11 +42,12 @@
 
     <h2>5. Publicidad y consentimiento</h2>
     <p>La Aplicación utilizará Google Mobile Ads (AdMob) para publicidad. Según la región, las decisiones del usuario y la configuración, Google y sus socios pueden tratar identificadores del dispositivo o de publicidad, dirección IP, ubicación aproximada inferida, información técnica del dispositivo y del app, interacciones con anuncios, diagnóstico y prevención del fraude.</p>
-    <p>Google User Messaging Platform (UMP) gestionará el consentimiento cuando corresponda. El usuario podrá ajustar opciones de privacidad en la Aplicación cuando esa opción esté disponible.</p>
+    <p>Google User Messaging Platform (UMP) gestiona el consentimiento cuando corresponde. El usuario puede ajustar opciones de privacidad en la Aplicación cuando esa opción esté disponible.</p>
     <p><a href="https://policies.google.com/privacy">Política de Privacidad de Google</a></p>
 
     <h2>6. Analytics</h2>
-    <p>Google/Firebase Analytics podrá usarse únicamente después de la activación y configuración correspondientes, respetando el consentimiento, la legislación aplicable y la política definida en la Aplicación. La arquitectura actual impide incluir valores, resultados y búsquedas en eventos propios. Los proveedores pueden tratar identificadores y datos técnicos según sus políticas.</p>
+    <p>La Aplicación Android incluye Firebase Analytics con la recopilación nativa desactivada de forma predeterminada. La recopilación permanece desactivada mientras la preferencia de Analytics esté sin definir o denegada. Si el usuario activa Analytics en Ajustes, la Aplicación podrá enviar a Google Firebase eventos de uso aprobados e información técnica. El usuario puede volver a desactivar Analytics sin reiniciar la Aplicación.</p>
+    <p>Nuestra instrumentación no envía valores introducidos, resultados de conversión, consultas de búsqueda, contenido del portapapeles, historial local, un identificador de usuario personalizado ni propiedades de usuario personalizadas. Firebase puede generar eventos automáticos y datos técnicos según la documentación y las políticas de Google. El consentimiento publicitario no determina la preferencia independiente de Analytics.</p>
 
     <h2>7. Otros datos y permisos</h2>
     <p>La Aplicación no solicita datos de salud, contactos, cámara, micrófono ni ubicación. No vendemos directamente datos personales. Los servicios externos necesarios pueden tratar datos técnicos conforme a sus propios términos y políticas.</p>

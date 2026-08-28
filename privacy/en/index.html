@@ -26,8 +26,8 @@
       <li>Favorites, history, preferences, and the latest valid rate cache are stored locally.</li>
       <li>Search queries, input values, and results are not sent to analytics.</li>
       <li>The currency feature contacts an external provider for exchange rates.</li>
-      <li>Google Mobile Ads will be used for advertising and Google UMP for consent where applicable.</li>
-      <li>Google/Firebase Analytics may be enabled later only after the corresponding setup and under the policy defined in the App.</li>
+      <li>Google Mobile Ads is configured for advertising and Google UMP provides consent choices where applicable.</li>
+      <li>Firebase Analytics may collect usage data and technical information only after the user enables Analytics in Settings.</li>
     </ul>
 
     <h2>2. Data stored locally</h2>
@@ -42,11 +42,12 @@
 
     <h2>5. Advertising and consent</h2>
     <p>The App will use Google Mobile Ads (AdMob) for advertising. Depending on region, user choices, and configuration, Google and its partners may process device or advertising identifiers, IP address, inferred approximate location, technical app and device information, ad interactions, diagnostics, and fraud-prevention data.</p>
-    <p>Google User Messaging Platform (UMP) will manage consent where applicable. Users will be able to adjust privacy choices in the App when that option is available.</p>
+    <p>Google User Messaging Platform (UMP) manages consent where applicable. Users can adjust privacy choices in the App when that option is available.</p>
     <p><a href="https://policies.google.com/privacy">Google Privacy Policy</a></p>
 
     <h2>6. Analytics</h2>
-    <p>Google/Firebase Analytics may be used only after the corresponding activation and setup, subject to consent, applicable law, and the policy defined in the App. The current architecture prevents input values, results, and search text from being included in first-party events. Providers may process identifiers and technical data under their own policies.</p>
+    <p>The Android App includes Firebase Analytics with native collection disabled by default. Collection remains disabled while the Analytics preference is unset or denied. If the user enables Analytics in Settings, the App may send approved usage events and technical information to Google Firebase. The user can disable Analytics again without restarting the App.</p>
+    <p>Our instrumentation does not send entered values, conversion results, search queries, clipboard contents, local history, a custom user ID, or custom user properties. Firebase may generate automatic events and technical data under Google's documentation and policies. Advertising consent does not determine the separate Analytics preference.</p>
 
     <h2>7. Other data and permissions</h2>
     <p>The App does not request health, contacts, camera, microphone, or location data. We do not directly sell personal data. Required external services may process technical data under their own terms and policies.</p>
